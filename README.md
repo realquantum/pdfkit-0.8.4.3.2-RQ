@@ -1,12 +1,14 @@
-# PDFKit
+# Modified PDFKit
 
-Create PDFs using plain old HTML+CSS. Uses [wkhtmltopdf](http://github.com/antialize/wkhtmltopdf) on the back-end which renders HTML using Webkit.
+PDFKit creates PDFs using plain old HTML+CSS. Uses [wkhtmltopdf](http://github.com/antialize/wkhtmltopdf) on the back-end which renders HTML using Webkit.
+
+This modified gem adds the page option that can be passed in the hash that is the second paramater for the constructor.  This allows the user to place one body file before the TOC, and one after the TOC.
 
 ## Install
 
 ### PDFKit
 ```
-gem install pdfkit
+gem 'pdfkit', :github => 'realquantum/pdfkit-0.8.4.3.2-RQ', :branch => 'master'
 ```
 ### wkhtmltopdf
 
